@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Candy Shop</h1>
+
+    <form id="candyForm">
+        <label for="candyName">Candy Name:</label>
+        <input type="text" id="candyName" required>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" required>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" step="0.01" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" required>
+
+        <button type="button" onclick="addItem()">Add Item</button>
+    </form>
+
+    <!-- Display added items -->
+    <h2>Added Items:</h2>
+    <ul id="itemList"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
